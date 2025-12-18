@@ -73,3 +73,9 @@ function reiniciar() {
     document.getElementById('lista-amigos').innerHTML = "";
     document.getElementById('lista-sorteio').innerHTML = "";
 }
+
+document.getElementById('nome-amigo').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        adicionar();
+    }
+});
